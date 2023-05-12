@@ -16,7 +16,7 @@ pipeline {
             }
 
             post{
-                sucess {
+                success {
                     emailext attachLog: true, 
                     body: 'Success', 
                     subject: 'Stage Status: Unit and Intergration Test', 
@@ -42,7 +42,7 @@ pipeline {
                 echo "This stage will make sure that there will be a security check for any exploits, a Security Scan Stage tool would be Nikto"
             }
             post{
-                sucess {
+                success {
                     emailext attachLog: true, 
                     body: 'Success', 
                     subject: 'Stage Status: Security Scan', 
@@ -67,7 +67,7 @@ pipeline {
             }
 
             post{
-                sucess {
+                success {
                     emailext attachLog: true, 
                     body: 'Success', 
                     subject: 'Stage Status: Integration Test on Staging', 
