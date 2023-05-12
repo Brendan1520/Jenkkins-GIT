@@ -41,6 +41,7 @@ pipeline {
             steps {
                 echo "This stage will make sure that there will be a security check for any exploits, a Security Scan Stage tool would be Nikto"
             }
+
             post{
                 success {
                     emailext attachLog: true, 
@@ -66,20 +67,20 @@ pipeline {
                 echo "This stage will do checks to make sure the applications functions as intended in a situation like production"
             }
 
-            post{
+            post {
                 success {
                     emailext attachLog: true, 
                     body: 'Success', 
-                    subject: 'Stage Status: Integration Test on Staging', 
+                    subject: 'Status of Integration Test on Staging', 
                     to: 'kevinsamarasekara2121@gmail.com'
                 }
-                failure{
+                failure {
                     emailext attachLog: true, 
                     body: 'Fail', 
-                    subject: 'Stage Status: Integration Test on Staging', 
+                    subject: 'Status of Integration Test on Staging', 
                     to: 'kevinsamarasekara2121@gmail.com'
-                }
             }
+        }
         }
         stage("Deploy to Production") {
             steps {
