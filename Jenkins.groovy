@@ -12,7 +12,7 @@ pipeline {
         }
         stage("Unit and Intergration Test") {
             steps {
-                 echo "This stage will help verify that the code function as intended and that various components of the programme work together as planned, a Unit Test tool would be NUnit and an Intergration Test tool would be Citrus or Protractor"
+                 ho "This stage will help verify that the code function as intended and that various components of the programme work together as planned, a Unit Test tool would be NUnit and an Intergration Test tool would be Citrus or Protractor"
             }
 
             post{
@@ -33,7 +33,7 @@ pipeline {
         }
         stage("Code Analysis Check") {
             steps {
-                ho "Code Analysis check will help to check weather the code complies with industry standard, a Code Analysis Check tool would be, SonarQube"
+                echo "Code Analysis check will help to check weather the code complies with industry standard, a Code Analysis Check tool would be, SonarQube"
                 
             }
         }
