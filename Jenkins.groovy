@@ -24,7 +24,7 @@ pipeline {
                 }
                 failure{
                     emailext attachLog: true, 
-                    body: 'Fail', 
+                    body: 'Failure', 
                     subject: 'Stage Status: Unit and Intergration Test', 
                     to: 'brendanse45@gmail.com'
                 }
@@ -51,7 +51,7 @@ pipeline {
                 }
                 failure{
                     emailext attachLog: true, 
-                    body: 'Fail', 
+                    body: 'Failure', 
                     subject: 'Stage Status: Security Scan', 
                     to: 'brendanse45@gmail.com'
                 }
@@ -76,7 +76,7 @@ pipeline {
                 }
                 failure {
                     emailext attachLog: true, 
-                    body: 'Fail', 
+                    body: 'Failure', 
                     subject: 'Status of Integration Test on Staging', 
                     to: 'brendanse45@gmail.com'
             }
