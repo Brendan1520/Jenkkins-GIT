@@ -20,13 +20,13 @@ pipeline {
                     emailext attachLog: true, 
                     body: 'Success', 
                     subject: 'Stage Status: Unit and Intergration Test', 
-                    to: 'kevinsamarasekara2121@gmail.com'
+                    to: 'brendanse45@gmail.com'
                 }
                 failure{
                     emailext attachLog: true, 
                     body: 'Fail', 
                     subject: 'Stage Status: Unit and Intergration Test', 
-                    to: 'kevinsamarasekara2121@gmail.com'
+                    to: 'brendanse45@gmail.com'
                 }
             }
 
@@ -47,13 +47,13 @@ pipeline {
                     emailext attachLog: true, 
                     body: 'Success', 
                     subject: 'Stage Status: Security Scan', 
-                    to: 'kevinsamarasekara2121@gmail.com'
+                    to: 'brendanse45@gmail.com'
                 }
                 failure{
                     emailext attachLog: true, 
                     body: 'Fail', 
                     subject: 'Stage Status: Security Scan', 
-                    to: 'kevinsamarasekara2121@gmail.com'
+                    to: 'brendanse45@gmail.com'
                 }
             }
         }
@@ -72,13 +72,13 @@ pipeline {
                     emailext attachLog: true, 
                     body: 'Success', 
                     subject: 'Status of Integration Test on Staging', 
-                    to: 'kevinsamarasekara2121@gmail.com'
+                    to: 'brendanse45@gmail.com'
                 }
                 failure {
                     emailext attachLog: true, 
                     body: 'Fail', 
                     subject: 'Status of Integration Test on Staging', 
-                    to: 'kevinsamarasekara2121@gmail.com'
+                    to: 'brendanse45@gmail.com'
             }
         }
         }
