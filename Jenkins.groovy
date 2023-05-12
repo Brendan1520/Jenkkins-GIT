@@ -33,7 +33,7 @@ pipeline {
         }
         stage("Code Analysis Check") {
             steps {
-                echo "Code Analysis check will help to check weather the code complies with industry standard, a Code Analysis Check tool would be, SonarQube"
+                ho "Code Analysis check will help to check weather the code complies with industry standard, a Code Analysis Check tool would be, SonarQube"
                 
             }
         }
