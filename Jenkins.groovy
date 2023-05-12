@@ -12,7 +12,7 @@ pipeline {
         }
         stage("Unit and Intergration Test") {
             steps {
-                 cho "This stage will help verify that the code function as intended and that various components of the programme work together as planned, a Unit Test tool would be NUnit and an Intergration Test tool would be Citrus or Protractor"
+                 echo "This stage will help verify that the code function as intended and that various components of the programme work together as planned, a Unit Test tool would be NUnit and an Intergration Test tool would be Citrus or Protractor"
             }
 
             post{
